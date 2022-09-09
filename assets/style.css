@@ -1,0 +1,20 @@
+/*class selectors*/
+.background {
+    background-image: url(./images/background.png);
+    background-position: top center;
+    text-align: center;
+    min-height: 1500px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+p {
+    color: black;
+ }
+
+ body {
+   margin: 0; 
+ }
