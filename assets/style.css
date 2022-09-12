@@ -1,3 +1,17 @@
+:root {
+    --backg: grey;
+    --text: white;
+    --high: green;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
 /*class selectors*/
 .background {
     background-image: url(./images/background.png);
@@ -11,10 +25,53 @@
     background-attachment: scroll;
 }
 
-p {
-    color: black;
- }
+li, a, button, h1 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
 
- body {
-   margin: 0; 
- }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10%;
+}
+
+
+nav a {
+    display: inline-block;
+    padding: 0px 29px;
+}
+
+nav a li a {
+    transition: all 0.3s ease 0s
+}
+
+nav a li a{
+    transition: rgb(129, 202, 129);
+}
+
+button {
+    margin-left: 20px;
+    padding: 25px, 25px;
+    background-color: var(--high);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(129, 202, 129);
+}
+
+h1 {
+    color:rgb(129, 202, 129);
+    font-size: 45px;
+    
+}
+
