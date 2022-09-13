@@ -8,28 +8,45 @@
     <meta name="author" content="Darrel Wu, Darryl Gray, Michael Alvarado, Dong lee, Corey Rogers">
     <!--link to css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" >
-    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
     <title>EV Boost</title>
-
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+        <script type="module" src="./assets/script.js"></script>
+    
     <!--Favicons-->
     <link rel="shortcut icon" href="./assets/images/car_favicon.png">
 </head> 
-<header>
-    <div class = "logo">
-        <h1>EV Boost</h1>
-    </div>
-    <!-- Navbar -->
-    <nav class = "nav a">
-        <a href="#link-1">Link 1</a>
-        <a href="#link-2">Link 2</a>
-        <a href="#link-3">Link 3</a>
-    </nav>
-    <a class = "cta" href="#"><button>Contact</button></a>
-</header>
+
 <body>
- <!-- background -->
- <section class="background">
-</section>
+    <header>
+        <div class = "logo">
+            <h1>EV Boost</h1>
+        </div>
+        <!-- Navbar -->
+        <nav class = "nav a">
+            <a href="#link-1">Link 1</a>
+            <a href="#link-2">Link 2</a>
+            <a href="#link-3">Link 3</a>
+        </nav>
+        <a class = "cta" href="#"><button>Contact</button></a>
+    </header>
+    <!-- background -->
+    <section class="background">
+    </section>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
     
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
 </body>
 </html>
