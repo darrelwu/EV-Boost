@@ -9,7 +9,6 @@
     font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
     margin: 0;
     padding: 0;
-    background-color: #24252A;
 }
 
 /*class selectors*/
@@ -17,12 +16,16 @@
     background-image: url(./images/background.png);
     background-position: top center;
     text-align: center;
-    min-height: 1500px;
+    min-height: 500px;
     display: flex;
     align-items: left;
     justify-content: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+}
+
+body {
+      background-color: #24252A;
 }
 
 li, a, button, h1 {
