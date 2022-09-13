@@ -17,7 +17,7 @@ function initMap() {
   window.initMap = initMap;
 
   let url = 
-  "https://api.openchargemap.io/v3/referencedata?key=4d0b1b45-2674-481a-96b8-a48760d39238"
+  "https://api.openchargemap.io/v3/poi?key=4d0b1b45-2674-481a-96b8-a48760d39238/?output=json&boundingbox=(30.513171,-97.936058),(30.121121,-97567030)"
   
   fetch (url).then(function(response){
    console.log(response.json());
