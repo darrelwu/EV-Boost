@@ -36,14 +36,12 @@ li, a, button, h1 {
 
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px, 10%;
 }
-
 
 nav a {
     display: inline-block;
@@ -76,6 +74,16 @@ h1 {
     color:rgb(129, 202, 129);
     font-size: 45px;
     
+}
+
+h3 {
+  text-align: center;
+  color: var(--text);
+}
+
+footer {
+  height: 100px;
+  margin-top: 5px;
 }
 
 /* Set the size of the div element that contains the map */
