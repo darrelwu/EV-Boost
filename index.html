@@ -29,12 +29,28 @@
         </nav>
         <a class = "cta" href="#"><button>Contact</button></a>
     </header>
+   
+    <section class ="slogan">
+    <p>We boost your EV charging decisions</p>
+    </section>
+    
+    <form onsubmit= "myfunc(event)">
+        <div>
+            <p>Enter your zip code here to find electric car charging stations in the Austin area</p>
+            <label> Enter Zip Code</label>
+            <input type = "number" id="zip_code" required />
+        </div>
+        <input type = "submit" value = "Submit" />
+    </form>
+    
     <!-- background -->
     <section class="background">
     </section>
+    
     <h3>EV Locations</h3>
     <!--The div element for the map -->
     <div id="map"></div>
+
 
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
@@ -49,6 +65,14 @@
         </script>
         
     </footer>
+    <script type ="text/javascript">
+        function myfunc(event) {
+            event.preventDefault();
+
+            var zip_code = document.getElementbyId("zip_code").value;
+            localStorage.setItem ("Is_zipcode", zip_code);
+        }
+    </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
       defer
