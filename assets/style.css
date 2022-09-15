@@ -7,8 +7,6 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    margin: 0;
-    padding: 0;
 }
 
 /*class selectors*/
@@ -26,6 +24,12 @@
 
 body {
       background-color: #24252A;
+      color: var(--text);
+}
+
+form input {
+    margin: 2px;
+    padding: 10px;
 }
 
 li, a, button, h1 {
@@ -48,6 +52,10 @@ nav a {
     padding: 0px 30px;
 }
 
+nav a:hover {
+    color: rgb(129, 202, 129);
+}
+
 nav a li a {
     transition: all 0.3s ease 0s
 }
@@ -55,6 +63,27 @@ nav a li a {
 nav a li a{
     transition: rgb(129, 202, 129);
 }
+
+form {
+    font-size: 20px;
+    align-items: flex-end;
+    position: fixed;
+    left: 1700px;
+    bottom: 900px;
+}
+
+p {
+    font-size: 35px;
+    color: rgb(129, 202, 129);
+}
+
+.slogan {
+    position: fixed;
+    align-items: flex-start;
+    bottom: 950px;
+    right: 1800px;
+}
+
 
 button {
     margin-right: 20px;

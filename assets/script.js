@@ -21,8 +21,8 @@ function initMap() {
   
   fetch (url).then(function(response){
    console.log(response.json());
+//    const evList = JSON.parse(response.getItem());
+
+//    console.log(evList[0][0][10]);
   });
-  //   var apiKey = "4d0b1b45-2674-481a-96b8-a48760d39238"
-  //   curl --request GET \
-  //   url 'https://api.openchargemap.io/v3/referencedata?key=' \
-  //   header 'Content-Type: application/json
+
