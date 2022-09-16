@@ -68,6 +68,7 @@ function mapMarkerCreator() {
         map: map,
       });
     }
+    mapMarker.length = 0;
   }
 }
 
