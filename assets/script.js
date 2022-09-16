@@ -2,12 +2,13 @@ const mapMarker =[];
 var evList;
 var markMe;
 var map;
-
+var lat = 30.2747;
+var lng = -97.7404;
 
 // Initialize and add the map
 function initMap() {
     // The location of Uluru
-    const uluru = { lat: 30.2747, lng: -97.7404 };
+    const uluru = { lat: lat, lng: lng };
     // The map, centered at Uluru
     map = new google.maps.Map(document.getElementById("map"), {
       zoom: 12,
@@ -32,7 +33,7 @@ function zipStorage(event) {
   
   var zip_code = document.getElementById("zip_code").value;
   localStorage.setItem ("Is_zipcode", zip_code);
-
+  map.setCenter(-96.6404,31.1747,12);
   mapMarkerCreator();
 }
 
@@ -65,7 +66,8 @@ function mapMarkerCreator() {
   }
 
   console.log(mapMarker);
-
+  // map.setCenter(lng,lat,12);
+  // initMap();
   if (mapMarker.length>0) {
     for (var j=0; j<mapMarker.length; j++) {
       const markMe = { lat: mapMarker[j][0], lng: mapMarker[j][1]};
@@ -74,11 +76,24 @@ function mapMarkerCreator() {
         map: map,
       });
     }
-      var newCenter = {lat: mapMarker[0][0], lng: mapMarker[0][1]};
+    var newCenter = {lat: mapMarker[0][0], lng: mapMarker[0][1]};
 
-    map = map, {
-      center: newCenter,
-    };
+    // map = new google.maps.Map(document.getElementById("map"), {
+    //   zoom: 12,
+    //   center: uluru,
+    // });
+    lat = mapMarker[0][0];
+    lng = mapMarker[0][1];
+
+    
+    
+
+
+    
+    // return lat,lng;
   }
+  console.log(lat);
+  console.log(lng);
+
 }
 
