@@ -10,8 +10,7 @@
 }
 
 /*class selectors*/
-.background {
-    background-image: url(./images/background.png);
+/* .background {
     background-position: top center;
     text-align: center;
     min-height: 500px;
@@ -20,7 +19,7 @@
     justify-content: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-}
+} */
 
 body {
     background-color: #24252A;
@@ -66,6 +65,7 @@ nav a li a{
 
 form {
     font-size: 20px;
+
     align-items: flex-end;
     position: relative;
     /* left: 1700px;
@@ -78,16 +78,35 @@ p {
 }
 
 .slogan {
-    position: fixed;
-    align-items: flex-start;
     bottom: 950px;
     right: 1800px;
+    width: 25%;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.myform {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    padding-left: 5px;
+}
 
 button {
-    margin-right: 20px;
-    padding: 9px, 25px;
+    display: flex;
     background-color: var(--high);
     border: none;
     border-radius: 50px;

@@ -23,29 +23,32 @@
         </div>
         <!-- Navbar -->
         <nav class = "nav a">
-            <a href="#link-1">Link 1</a>
-            <a href="#link-2">Link 2</a>
-            <a href="#link-3">Link 3</a>
+            <a href="#map">Map</a>
+            <a href="#weather">Weather</a>
         </nav>
         <a class = "cta" href="#"><button>Contact</button></a>
     </header>
-   
+
+  <div class = "container">
     <section class ="slogan">
     <p>We boost your EV charging decisions</p>
     </section>
-    
-    <div>
-        <form>
+
+    <section class="background">
+        <img src="./assets/images/background.png"/>
+    </section>
+
+    <section class="myForm" form onsubmit= "myfunc(event)">
+        <div>
+          <form>
             <p>Enter your zip code here to find electric car charging stations in the Austin area</p>
             <label> Enter Zip Code</label>
-            <input type="number" name="zipCode" id="zip_code" required />
+            <input type = "number" name="zipCode" id="zip_code" required />
             <button id="submitMe">Submit</button>
-        </form>
-    </div>
-    
-    <!-- background -->
-    <section class="background">
+          </form>
+        </div>
     </section>
+  </div> 
     
     <h3>EV Locations</h3>
     <!--The div element for the map -->
@@ -59,19 +62,21 @@
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
     <footer>
-        <a class="weatherwidget-io" href="https://forecast7.com/en/30d27n97d74/austin/?unit=us" data-label_1="AUSTIN" data-label_2="WEATHER" data-icons="Climacons Animated" data-days="3" data-theme="random_grey" >AUSTIN WEATHER</a>
+        <a id="weather" class="weatherwidget-io" href="https://forecast7.com/en/30d27n97d74/austin/?unit=us" data-label_1="AUSTIN" data-label_2="WEATHER" data-icons="Climacons Animated" data-days="3" data-theme="random_grey" >AUSTIN WEATHER</a>
         <script>
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
         </script>
         
     </footer>
     <script type ="text/javascript">
-        
     </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
       defer
     ></script>
     <script src="./assets/script.js"></script>
+    <script src="https://www.google.com/maps/embed/v1/place
+    ?key=https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&q=30.329100,-97.706329">
+</script>
 </body>
 </html>
