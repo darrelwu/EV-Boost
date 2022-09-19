@@ -38,15 +38,17 @@
         <img src="./assets/images/background.png"/>
     </section>
 
-    <section class="myform" form onsubmit= "myfunc(event)">
+    <section class="myForm" form onsubmit= "myfunc(event)">
         <div>
+          <form>
             <p>Enter your zip code here to find electric car charging stations in the Austin area</p>
             <label> Enter Zip Code</label>
-            <input type = "number" id="zip_code" required />
+            <input type = "number" name="zipCode" id="zip_code" required />
+            <button id="submitMe">Submit</button>
+          </form>
         </div>
-        <input type = "submit" value = "Submit" />
     </section>
-</div> 
+  </div> 
     
     <h3>EV Locations</h3>
     <!--The div element for the map -->
@@ -67,12 +69,6 @@
         
     </footer>
     <script type ="text/javascript">
-        function myfunc(event) {
-            event.preventDefault();
-
-            var zip_code = document.getElementById("zip_code").value;
-            localStorage.setItem ("Is_zipcode", zip_code);
-        }
     </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"

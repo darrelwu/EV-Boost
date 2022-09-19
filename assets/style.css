@@ -22,8 +22,8 @@
 } */
 
 body {
-      background-color: #24252A;
-      color: var(--text);
+    background-color: #24252A;
+    color: var(--text);
 }
 
 form input {
@@ -65,8 +65,11 @@ nav a li a{
 
 form {
     font-size: 20px;
-    left: 1700px;
-    bottom: 900px;
+
+    align-items: flex-end;
+    position: relative;
+    /* left: 1700px;
+    bottom: 900px; */
 }
 
 p {
