@@ -31,9 +31,8 @@ form input {
     padding: 10px;
 }
 
-li, a, button, h1 {
+li, a, .cta, h1, #submitMe {
     font-weight: 500;
-    font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
 
@@ -43,12 +42,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px, 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    /* padding: 30px, 10%; */
 }
 
 nav a {
     display: inline-block;
     padding: 0px 30px;
+    margin-left: -20%;
 }
 
 nav a:hover {
@@ -73,7 +75,7 @@ form {
 }
 
 p {
-    font-size: 35px;
+    font-size: 25px;
     color: rgb(129, 202, 129);
 }
 
@@ -87,7 +89,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+
 }
 
 .background {
@@ -97,12 +101,13 @@ p {
     width: 50%;
 }
 
-.myform {
+.myForm {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 25%;
-    padding-left: 5px;
+    padding-left: 15px;
+    text-align: center;
 }
 
 button {
@@ -114,13 +119,20 @@ button {
     transition: all 0.3s ease 0s;
 }
 
+#submitMe {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
 button:hover {
     background-color: rgb(129, 202, 129);
 }
 
 h1 {
     color:rgb(129, 202, 129);
-    font-size: 45px;
+    font-size: 35px;
     
 }
 
@@ -142,3 +154,28 @@ footer {
   /* The width is the width of the web page */
 }
 
+@media screen and (min-width: 1408px) {
+.container:not(.is-max-desktop):not(.is-max-widescreen) {
+    max-width: 100%;
+}
+h1 {
+    font-size: 45px;
+}
+p {
+    font-size: 35px;
+}
+
+}
+
+@media screen and (min-width: 1216px) {
+.container:not(.is-max-desktop):not(.is-max-widescreen) {
+    max-width: 100%;
+}
+h1{
+    font-size: 40px;
+}
+p {
+    font-size: 30px;
+}
+
+}
