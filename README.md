@@ -19,6 +19,10 @@ This is to allows users of the webpage to view charging stations within their lo
 ## Demo
 https://darrelwu.github.io/EV-Boost/
 
+
+<img src="./assets/images/website_image.jpg">
+
+
  
 Need pictures for website here
 
