@@ -15,6 +15,16 @@ The teams' motivation was to create a webpage that allows users to search for El
 
 ## Usage
 This is to allows users of the webpage to view charging stations within their local zipcode through a simple search. 
+
+## Elevator Pitch
+
+With the growing number of electric vehicles on the road, finding a 
+charging station becomes increasingly important.
+That’s where EV-Boost comes in to play. Simply pull up EVBoost.com 
+on your favorite browser, enter your zip code and using Google Maps 
+technology, get all the charging stations in the area. As a bonus, you 
+can even get the weather forecast. EV-Boost helping you charge into 
+your day!
  
 ## Demo
 https://darrelwu.github.io/EV-Boost/
